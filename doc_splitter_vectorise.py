@@ -13,8 +13,8 @@ persist_directory = 'docs/chroma/'
 
 embeddings = HuggingFaceEmbeddings(model_name=MODEL_NAME)
 
-# genai.configure(api_key='AIzaSyA_2pS_tFnsiblVLuZJc6tswlcBAwG9H9I')
-# embeddings = GoogleGenerativeAIEmbeddings(google_api_key = 'AIzaSyA_2pS_tFnsiblVLuZJc6tswlcBAwG9H9I', model = "models/embedding-001")
+# genai.configure(api_key='')
+# embeddings = GoogleGenerativeAIEmbeddings(google_api_key = '', model = "models/embedding-001")
 
 
 
