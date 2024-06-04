@@ -38,11 +38,12 @@ def qa(input_qa):
                                        chain_type_kwargs={"prompt": QA_CHAIN_PROMPT})
 
     result = qa_chain({"query": input_qa})
-    result["result"]
-    print(result["result"])
-    main_split = result["result"].split('Helpful Answer')
-    print(len(main_split()))
-    st.write("Reply: ", main_split[1])
+    result_text = result["result"]
+    #print(result["result"])
+    main_split = result_text.split('Helpful Answer:')
+    #print(len(main_split))
+    reply = main_split[1]
+    st.write("Reply: ", main_split[1].strip())
 
 def main():
     st.header("Chat with PDF")
